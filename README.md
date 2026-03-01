@@ -116,25 +116,5 @@ ProductsApi/
 └── Program.cs                # App startup, DI, middleware pipeline
 ```
 
----
 
-## OpenAPI Docs
-
-When running in Development, the raw OpenAPI spec is available at:
-```
-http://localhost:5272/openapi/v1.json
-```
-
-Import this into Postman or any API client to explore and test all endpoints.
-
----
-
-## Database
-
-The API uses a local SQLite file (`games.db`) created automatically when you run `dotnet ef database update`. The file lives in the project root and is excluded from source control.
-
-If you change the `Game` model, create a new migration:
-```bash
-dotnet ef migrations add <MigrationName>
-dotnet ef database update
 ```
